@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #00695c;
+}
+
+nav ul li {
+    padding: 15px 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+.menu-toggle {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+.history-container{
+    height: fit-content;
+    width: 90%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #f8f4f4;
+    padding: 10px 12px;
+}
+.history {
+    background: white;
+    margin: 20px;
+    position: relative;
+    border-radius: 10px;
+    padding: 13px 15px;
+    text-align: justify;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.history h2{
+    text-align: center;
+    color: #036627;
+    font-size: 28px;
+}
+.alumni{
+    background: white;
+    margin: 20px;
+    padding: 13px 15px;
+    text-align: justify;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.alumni h2{
+    text-align: center;
+    color: #036627;
+    font-size: 28px;
+}
+/*Footer */
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-nav ul li {
+    display: inline;
+    padding: 0 10px;
+}
+
+.footer-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-social .social-icons {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+/* Footer  */
+.main-footer {
+    background: #00332c; /* Darker shade for better contrast */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-legal a {
+    color: #ffeb3b; /* Yellowish color for better visibility */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-legal a:hover {
+    text-decoration: underline;
+}

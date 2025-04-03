@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bweranyangi Girls SSS - News & Events</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+    <div class="news">
+        <h1>School news & events</h1>
+
+        <nav id="navMenu">
+            <div class="pages">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    
+    <header>
+        <input type="text" id="searchbar" placeholder="Search news...">
+    </header>
+
+    <div class="Recent">
+        <h2>📢 Recent news</h2>
+        <main id="newsContainer">
+            <div class="news-card">
+                <img src="dormetry.jpg" alt="construction site">
+                <div class="news-content">
+                    <h2><a href="#" class="news-link" data-title="Believe it or not, the site is going to be amazing" data-content="The Bweranyangi new dormitory construction is one of the extra-ordinary buildings the school has undertaken. Right after the construction of the new chapel, Bweranyangi Girls SSS is building one of the biggest dormitories the school has ever seen. The three-story structure will accommodate 500 students with modern facilities including study lounges on each floor, spacious bathrooms, and solar-powered hot water systems. The construction is expected to be completed by December 2023, just in time for the new academic year. Headmistress Mrs. Kiconco stated, 'This is part of our vision to provide world-class facilities while maintaining our traditional values.' The project is funded through a combination of school funds, alumni contributions, and a government grant.">Believe it or not, the site is going to be amazing: The Bweranyangi new dormitory construction is one of the extra-ordinary building</a></h2>
+                    <p>Right after the construction of the new chapel, Bweranyangi Girls SSS is building one of the biggest dormitory the school has ever seen...</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="netball-team.jpeg" alt="netball team">
+                <div class="news-content">
+                    <h2><a href="#" class="news-link" data-title="Bweranyangi Netball team wins USSSA" data-content="The Bweranyangi Netball team has made history by winning the USSSA national championship for the first time in the school's 65-year history. The team, coached by Ms. Nalwoga, defeated defending champions Gayaza High School 32-28 in a thrilling final match that went into extra time. Team captain Sarah Namutebi was named MVP of the tournament, scoring 18 goals in the final match. 'This victory is for all the girls who came before us and never got this far,' said an emotional Namutebi during the trophy presentation. The team will now represent Uganda at the East African Secondary Schools Games in Dar es Salaam next month. The school administration has announced a special assembly to honor the team and a week-long celebration of sports achievements.">Bweranyangi Netball team wins USSSA</a></h2>
+                    <p>The Bweranyangi Netball team as one of the few secondary schools to make it for the national ball games has emerged as the first...</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="anthem.jpg" alt="MDD">
+                <div class="news-content">
+                    <h2><a href="#" class="news-link" data-title="Bweranyangi School Anthem" data-content="Bweranyangi Girls SSS has officially launched its new school anthem, composed by the school's Music, Dance and Drama department in collaboration with renowned Ugandan musician Judith Babirye. The anthem, which took six months to compose, blends traditional Busoga rhythms with contemporary gospel influences. 'We wanted an anthem that reflects our heritage while sounding modern and inspiring,' explained MDD teacher Mr. Walube. The anthem was premiered during the school's 65th anniversary celebrations, performed by a 100-voice choir accompanied by the school band. The lyrics emphasize academic excellence, moral integrity, and service to the community. All students will learn the anthem during weekly MDD lessons, and it will be performed at all major school events. The school has also produced a professional recording available on all major music platforms.">Bweranyangi school Anthem</a></h2>
+                    <p>Bweranyangi Girls SSS is also known for its greatness in music dance and drama (MDD) its Anthem is also...</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <img src="chapel.jpg" alt="New Chapel">
+                <div class="news-content">
+                    <h2><a href="#" class="news-link" data-title="Construction of the new chapel has been completed" data-content="The St. Paul's Cathedral, also known as the Bweranyangi Girls Chapel, has been officially opened after three years of construction. The magnificent structure can seat 1,500 worshippers and features stained glass windows depicting scenes from Ugandan Christian history, a pipe organ donated by the Church of Uganda, and a marble altar. The chapel was consecrated by the Archbishop of the Church of Uganda in a colorful ceremony attended by alumni, parents, and government officials. 'This chapel represents our commitment to spiritual growth alongside academic excellence,' said school chaplain Rev. Kityo. The chapel will host daily morning prayers, Sunday services for boarding students, and special religious events. The construction was funded through donations from alumni spanning six decades, with the class of 1985 being the largest contributors. A dedication plaque listing all major donors has been installed in the chapel vestibule.">Construction of the new chapel has been completed</a></h2>
+                    <p>The St.Paul's Cathedral also known as the Bweranyangi Girls Chapel that was started in 2020 has been completed successfully...</p>
+                </div>
+            </div>
+        </main>
+
+        <div class="upcoming-events">
+            <h2>📅 Upcoming Events</h2>
+            <ul>
+                <li>Hockey Team represents the school in the East African Games - May 15-22</li>
+                <li>Games and Sports week starts April 14th to April 22nd</li>
+                <li>Students celebrate their Easter with parents for the first time - April 9th</li>
+                <li>Annual Science Fair - June 5th</li>
+                <li>Founder's Day Celebrations - July 18th</li>
+            </ul>
+        </div>
+
+        <section id="event-calendar">
+            <h2>✏️ Submit News/Event</h2>
+            <form id="newsSubmissionForm">
+                <input type="text" id="newsTitle" placeholder="Title" required>
+                <textarea id="newsContent" placeholder="Detailed content" required></textarea>
+                <input type="file" id="newsImage" accept="image/*">
+                <button type="submit">Submit News</button>
+            </form> 
+        </section>
+    </div>
+
+    <!-- News Detail Modal -->
+    <div id="newsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modalTitle"></h2>
+            <img id="modalImage" src="" alt="">
+            <p id="modalContent"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2023 Bweranyangi Girls Secondary School | All Rights Reserved</p>
+    </footer>
+
+    <script src="news.js"></script>
+</body>
+</html>

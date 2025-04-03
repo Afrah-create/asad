@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Bweranyangi Girls' Senior Secondary School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Our School Gallery</h1>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="news.html">NEWS & EVENTS</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Gallery Hero -->
+    <section id="gallery-hero">
+        <div class="hero-content">
+            <h2>Capturing Moments of Excellence</h2>
+            <p>Explore life at Bweranyangi through our photo collections</p>
+        </div>
+    </section>
+
+    <!-- Gallery Navigation -->
+    <section id="gallery-nav">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Photos</button>
+                <button class="filter-btn" data-filter="academic">Academic</button>
+                <button class="filter-btn" data-filter="events">School Events</button>
+                <button class="filter-btn" data-filter="sports">Sports</button>
+                <button class="filter-btn" data-filter="facilities">Facilities</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Gallery -->
+    <section id="main-gallery">
+        <div class="container">
+            <div class="gallery-grid">
+                <!-- Academic Activities -->
+                <div class="gallery-item academic">
+                    <img src="laboratory.jpg" alt="Students in science laboratory" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Science Practicals</h3>
+                        <p>Students conducting experiments in our modern laboratory</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item academic">
+                    <img src="library.jpeg" alt="School library" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Library Studies</h3>
+                        <p>Students utilizing our well-stocked library resources</p>
+                    </div>
+                </div>
+                
+                <!-- School Events -->
+                <div class="gallery-item events">
+                    <img src="speech.jpeg" alt="Speech day event" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Annual Speech Day</h3>
+                        <p>Head Prefect addressing students and parents on career guidance day</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item events">
+                    <img src="culturaldance.jpeg" alt="Cultural day performance" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Cultural Day</h3>
+                        <p>Students showcasing traditional dances and attire</p>
+                    </div>
+                </div>
+                
+                <!-- Sports -->
+                <div class="gallery-item sports">
+                    <img src="netball-team.jpeg" alt="Netball team" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Netball Team</h3>
+                        <p>Our school netball team during regional competitions</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item sports">
+                    <img src="athletic-team.jpeg" alt="Athletics competition" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Sports Day</h3>
+                        <p>Students competing in track events during sports day</p>
+                    </div>
+                </div>
+                
+                <!-- Facilities -->
+                <div class="gallery-item facilities">
+                    <img src="classrooms.jpg" alt="Modern classroom" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Classrooms</h3>
+                        <p>Our spacious, well-equipped learning environment</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item facilities">
+                    <img src="dormitoryroom.jpg" alt="Girls dormitory" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Dormitory Rooms</h3>
+                        <p>Clean, comfortable boarding facilities for our students</p>
+                    </div>
+                </div>
+                
+                <!-- Additional Images -->
+                <div class="gallery-item academic">
+                    <img src="computerlab.jpg" alt="Computer lab" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Computer Studies</h3>
+                        <p>Students learning digital skills in our computer lab</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item events">
+                    <img src="celebration.jpeg" alt="Graduation ceremony" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Celebrations</h3>
+                        <p>S6 student celebrating her academic success</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item sports">
+                    <img src="females-football.jpeg" alt="Football match" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Football</h3>
+                        <p>Inter-house football competition</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item facilities">
+                    <img src="dinning2.jpg" alt="School dining hall" id="gallery-items">
+                    <div class="overlay">
+                        <h3>Dining Hall</h3>
+                        <p>Students enjoying meals in our spacious dining area</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more">
+                <button id="loadMoreBtn">Load More Photos</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div id="photoModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="" alt="">
+            <div class="image-caption">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDesc"></p>
+            </div>
+        </div>
+    </div>
+
+      <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-nav">
+                <h3>Quick Links</h3>
+                <ul class="footer-nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="news.html">NEWS & EVENTS</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100066744393745" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://x.com/bweranyangi" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Bweranyangi Girls' Senior Secondary School. All Rights Reserved.</p>
+            <div class="footer-legal">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
